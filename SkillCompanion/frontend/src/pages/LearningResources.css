@@ -1,0 +1,146 @@
+.learning-resources-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main search */
+.search-container {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container form {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+}
+
+.main-search-input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.main-search-input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.main-search-button {
+  padding: 0 25px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.main-search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.empty-state-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.empty-state-content h2 {
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.empty-state-content p {
+  margin-bottom: 25px;
+  color: #6c757d;
+}
+
+/* Suggestion chips */
+.suggestion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.suggestion-chips button {
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.suggestion-chips button:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .search-container form {
+    flex-direction: column;
+  }
+  
+  .main-search-input {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .main-search-button {
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .suggestion-chips {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .suggestion-chips button {
+    width: 100%;
+    max-width: 200px;
+  }
+} 
